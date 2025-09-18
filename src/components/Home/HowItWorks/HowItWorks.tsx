@@ -26,8 +26,8 @@ export default function HowItWorks() {
         },
     ]
   return (
-    <div className='flex flex-col gap-2'>
-        <h3 className='text-xl font-semibold'>How it Works</h3>
+    <div className='flex flex-col gap-2 p-2'>
+        <h3 className='text-2xl font-bold'>How it Works</h3>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
             {

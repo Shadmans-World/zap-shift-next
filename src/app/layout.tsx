@@ -22,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en">
       <body
-        className={`${lato.variable} antialiased max-w-7xl mx-auto text-base-500 flex flex-col space-y-1`}
+        className={`${lato.variable} antialiased max-w-7xl mx-auto text-base-500 flex flex-col gap-3`}
       >
         <Navbar />
-        <div className="min-h-[calc(100vh-335px)]">{children}</div>
+        <div className="min-h-[calc(100vh-335px)] p-2">{children}</div>
         <Footer />
       </body>
     </html>

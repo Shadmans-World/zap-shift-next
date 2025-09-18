@@ -14,7 +14,7 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={`${isActive ? activeClassName : nonActiveClassName} text-black`}
+      className={`${isActive ? activeClassName : nonActiveClassName} text-base-500`}
     >
       {children}
     </Link>

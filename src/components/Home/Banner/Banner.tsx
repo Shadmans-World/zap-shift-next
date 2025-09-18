@@ -9,7 +9,7 @@ import bannerImage3 from "@/assets/banner/banner3.png";
 
 export default function Banner() {
   return (
-    <Carousel autoPlay infiniteLoop showStatus={false} interval={3000}>
+    <Carousel autoPlay infiniteLoop showStatus={false} interval={3000} showThumbs={false}>
       {[bannerImage1, bannerImage2, bannerImage3].map((img, idx) => (
         <div key={idx} className="relative w-full h-[400]">
           <Image src={img} alt={`Banner ${idx + 1}`} fill className="object-cover" />

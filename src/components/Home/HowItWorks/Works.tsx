@@ -13,11 +13,11 @@ interface WorksProps {
 export default function Works({work}:WorksProps) {
     const {icon,title,description} = work;
   return (
-    <div className='flex flex-col gap-2 p-2 border-1 border-black rounded-md'>
-        <div>{icon}</div>
+    <div className='flex flex-col gap-2 p-4 border-1  rounded-md'>
+        <div className='text-3xl'>{icon}</div>
         <div className='flex flex-col gap-2'>
-            <h3 className='font-normal'>{title}</h3>
-            <p className='text-sm'>{description}</p>
+            <h3 className='font-semibold'>{title}</h3>
+            <p className='text-sm font-normal'>{description}</p>
         </div>
 
     </div>
