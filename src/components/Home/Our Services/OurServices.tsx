@@ -43,7 +43,7 @@ export default function () {
   ];
 
   return (
-    <div className="flex flex-col gap-2 bg-base-300 p-2 rounded-md">
+    <div className="flex flex-col gap-3 bg-base-300 p-2 rounded-md">
       <div className="text-center space-y-2 mt-5">
         <h3 className="text-2xl font-bold ">Our Services</h3>
       <p className="text-sm font-normal">Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.</p>
