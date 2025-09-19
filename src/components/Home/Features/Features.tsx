@@ -40,7 +40,8 @@ const features: Feature[] = [
 
 export default function Features() {
   return (
-    <div className="flex flex-col gap-3 w-full">
+    <div className="flex flex-col gap-3 w-full my-5">
+       <div className="text-center mb-2"> <h3 className="text-2xl font-bold">Why Choose Us!</h3></div>
       {features.map((feature) => (
         <div
           key={feature.id}

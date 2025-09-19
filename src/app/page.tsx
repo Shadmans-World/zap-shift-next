@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner/Banner";
+import BeMerchant from "@/components/Home/BeMerchant/BeMerchant";
 import Companies from "@/components/Home/Companies/Companies";
 import Features from "@/components/Home/Features/Features";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
@@ -13,6 +14,7 @@ export default function Home() {
       <OurServices/>
       <Companies/>
       <Features/>
+      <BeMerchant/>
     </div>
   );
 }
