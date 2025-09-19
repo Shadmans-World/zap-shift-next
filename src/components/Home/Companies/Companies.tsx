@@ -19,7 +19,7 @@ export default function Companies() {
             {
                 logos.map((logo,idx)=><div
             key={idx}
-            className="mx-24  transition-all duration-300"
+            className="mx-5 sm:mx-10 md:mx-16 lg:mx-24  transition-all duration-300"
           >
             <Image
               src={logo}

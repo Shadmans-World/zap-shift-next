@@ -1,5 +1,6 @@
 import Banner from "@/components/Home/Banner/Banner";
 import Companies from "@/components/Home/Companies/Companies";
+import Features from "@/components/Home/Features/Features";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
 import OurServices from "@/components/Home/Our Services/OurServices";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
       <HowItWorks/>
       <OurServices/>
       <Companies/>
+      <Features/>
     </div>
   );
 }
