@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
@@ -5,6 +6,7 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import AosProvider from "@/components/shared/AosProvider";
+
 
 
 const lato = Lato({
@@ -24,12 +26,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+ 
   return (
     <html lang="en">
       <body 
         className={`${lato.variable} antialiased max-w-7xl mx-auto text-base-500 flex flex-col gap-3`}
       >
-        <Navbar />
+        <Navbar/>
+        
         <AosProvider/>
         <div className="min-h-[calc(100vh-335px)] p-2">{children}</div>
         <Footer />

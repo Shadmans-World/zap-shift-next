@@ -18,7 +18,7 @@ export default function Service({service}:ServiceProps) {
 
    
   return (
-    <div className='flex flex-col p-4 text-center gap-2 border-1 justify-center items-center hover:bg-lime-500 transition-all duration-300 ease-in-out'>
+    <div className='rounded-md flex flex-col p-4 text-center gap-2 border-1 justify-center items-center hover:bg-lime-500 transition-all duration-300 ease-in-out'>
         <div className='text-3xl'>
             {icon}
         </div>

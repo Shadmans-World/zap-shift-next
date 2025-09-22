@@ -1,13 +1,42 @@
+'use client'
 import React from "react";
 import NavLink from "@/components/shared/NavLink";
 import Link from "next/link";
 import ZapShiftLogo from "./Zap-Shift-Logo/ZapShiftLogo";
+import { usePathname } from "next/navigation";
 export default function Navbar() {
+
+  const pathName = usePathname();
+
+  if(pathName === '/login' || pathName === '/register'){
+    return null
+  }
+
+  
   const navItems = (
     <>
       <div className="flex gap-0.5">
-        <li>{<NavLink href={'/'} activeClassName="text-blue-500 font-bold">Home</NavLink>}</li>
-      <li>{<NavLink href={'/about'} activeClassName="text-blue-500 font-bold">About</NavLink>}</li>
+        <li>
+          {
+            <NavLink href={"/"} activeClassName="text-blue-500 font-bold">
+              Home
+            </NavLink>
+          }
+        </li>
+        <li>
+          {
+            <NavLink href={"/about"} activeClassName="text-blue-500 font-bold">
+              About
+            </NavLink>
+          }
+        </li>
+        <li>
+          {
+            <NavLink href={"/login"} activeClassName="text-blue-500 font-bold">
+              Sign In
+            </NavLink>
+          }
+        </li>
       </div>
     </>
   );
@@ -39,14 +68,15 @@ export default function Navbar() {
             {navItems}
           </ul>
         </div>
-        
-          <Link href={'/'}><><ZapShiftLogo /></></Link>
-       
+
+        <Link href={"/"}>
+          <>
+            <ZapShiftLogo />
+          </>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-        {navItems}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>

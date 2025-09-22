@@ -1,8 +1,15 @@
+'use client'
 import React from 'react'
 import ZapShiftLogo from './Zap-Shift-Logo/ZapShiftLogo'
+import { usePathname } from 'next/navigation'
 
 
 export default function Footer() {
+
+  const pathName = usePathname();
+  if(pathName === '/login' || pathName === '/register'){
+    return null;
+  }
   return (
    <footer className="footer footer-horizontal footer-center bg-base-300  p-10">
   <aside>
