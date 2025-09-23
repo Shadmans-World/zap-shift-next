@@ -4,7 +4,7 @@ import {NextRequest,NextResponse} from 'next/server'
 import bcrypt from 'bcryptjs'
 import { sendEmail } from "@/helpers/mailer";
 
-connectDB(); // database connected
+await connectDB(); // database connected
 
 interface reqBodyInfo {
     userName: string;

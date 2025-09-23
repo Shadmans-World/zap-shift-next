@@ -41,8 +41,8 @@ function Register() {
                 defaultValue="Pick a text editor"
                 className="select w-full"
               >
-                <option defaultChecked>Merchant</option>
-                <option>Delivery Man</option>
+                <option defaultChecked value={'merchant'}>Merchant</option>
+                <option value={'delivery-man'}>Delivery Man</option>
                 
               </select>
             </div>
